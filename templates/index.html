@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Darwiniana</title>
+</head>
+
+<!--Header from "header.html"-->
+{% include "header.html" %}
+
+<body>
+
+<!--Navbar from "navbar.html"-->
+{% include "navbar.html" %}
+
+<section id="top-section">
+    <div class="row">
+        <img class="col-lg-6 darwin-image" src="{{ url_for('static', filename='image/darwin-image.jpg') }}" ,
+             alt="darwin-image">
+        <div class="col-lg-6 quote-text">
+            {{ darwin_quote }}
+            </p>
+            <p>
+                - Charles Darwin
+            </p>
+        </div>
+    </div>
+</section>
+<section id="middle-section">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-bs-interval="true"
+         data-interval="10000">
+        <div class="carousel-inner">
+             <div class="carousel-item active">
+                <h2 class="testimonial-text">"{{ singer_quote_info.quote }}"</h2>
+                <img class="d-block mx-auto carousel-image"
+                     src="{{ url_for('static', filename='image/singer-image.jpg') }}" alt="singer-image">
+                <em>{{ singer_quote_info.name }}</em></div>
+
+            <div class="carousel-item">
+                <h2 class="testimonial-text">"{{ trivers_quote_info.quote }}"</h2>
+                <img class="d-block mx-auto carousel-image"
+                     src="{{ url_for('static', filename='image/trivers-image.png') }}" alt="trivers-image">
+                <em>{{ trivers_quote_info.name }}</em>
+            </div>
+
+            <div class="carousel-item">
+                <h2 class="testimonial-text">"{{ pinker_quote_info.quote }}"</h2>
+                <img class="d-block mx-auto carousel-image"
+                     src="{{ url_for('static', filename='image/pinker-image.jpg') }}" alt="pinker-image">
+                <em>{{ pinker_quote_info.name }}</em>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev carousel-button" href="#carouselExampleControls" role="button"
+                data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next carousel-button" href="#carouselExampleControls" role="button"
+                data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+</section>
+
+{% include "footer.html" %}
+</body>
+</html>

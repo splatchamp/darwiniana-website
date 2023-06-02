@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand">Darwiniana</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active nav-title" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-item nav-link nav-title" href="{{ url_for('natural_selection') }}">Natural Selection</a>
+            <a class="nav-item nav-link nav-title" href="{{ url_for('evolutionary_mountain') }}">The Evolutionary Mountain</a>
+            <a class="nav-item nav-link nav-title" href="{{ url_for('animal_sentience') }}">Implications of Animal Sentience</a>
+            <a class="nav-item nav-link nav-title" href="{{ url_for('static', filename='image/homosexual_behavior_in_simians.pdf') }}"
+               target="_blank">Simian Nonreproductive Sex</a>
+            <a class="nav-item nav-link nav-title" href="{{ url_for('evolutionary_dentistry') }}">Vestigial Structures and Evolutionary Dentistry</a>
+            <a class="nav-item nav-link nav-title" href="{{ url_for('a_cosmic_morality') }}">A Cosmic Morality</a>
+            <a class="nav-item nav-link nav-title" href="{{ url_for('static', filename='image/kierkegaard_and_the_religious_sense.pdf') }}">The Religious Sense</a>
+
+        </div>
+    </div>
+</nav>
+
+</html>

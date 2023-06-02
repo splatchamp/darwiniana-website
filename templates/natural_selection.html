@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Natural Selection</title>
+</head>
+
+<!--Header from header.html-->
+{% include "header.html" %}
+
+<body>
+
+<!--Navbar from navbar.html-->
+{% include "navbar.html" %}
+
+<div class="natural-selection-text row">
+    <img class="col-lg-6 image" src="{{ url_for('static', filename='image/leaf-gecko-image.jpg') }}">
+    <div class="paragraph col-lg-6">
+    <p class="drop-cap">
+        You may hear evolution and natural selection used interchangeably. Evolution is merely a multi-generational
+        change in allele frequencies in a given population of organisms. Natural selection, discovered concurrently by
+        Charles Darwin and Alfred Russel Wallace, is an adaptive form of evolution - one which contributes positively to
+        an organism's reproductive output. As Steven Pinker puts it, "Natural selection is not the only process that
+        changes organisms over time. But is the only process that seemingly designs organisms over time." What, then,
+        are the other forms of evolution - the non-adaptive ones? Non-adaptive forms of evolution include genetic drift,
+        gene flow, and mutation."
+    </p>
+    <p>
+        Camouflage is a product of natural selection favored by teachers in a classroom.
+        “Behavioral genetics confirms that aggressive tendencies can be inherited, and that gives natural selection
+        material to work with in shifting the average violent tendencies of a population.” - Steven Pinker
+
+    </p>
+        </div>
+</div>
+<hr>
+<div class="natural-selection-text row">
+    <div class="paragraph col-lg-6">
+        More will be added to this page at a later date . . .
+    </div>
+    <img class="col-lg-6 image" src="{{ url_for('static', filename='image/lizard-camo-image.jpg') }}">
+</div>
+<!--Footer from footer.html-->
+{% include "footer.html" %}
+
+</body>
+</html>

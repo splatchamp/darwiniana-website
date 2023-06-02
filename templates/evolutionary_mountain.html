@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Evolutionary Mountain</title>
+</head>
+
+<!--Header from "header.html"-->
+{% include "header.html" %}
+<body>
+
+<!--Navbar from "navbar.html"-->
+{% include "navbar.html" %}
+<br>
+<br>
+<br>
+<div class="row">
+    <div class="paragraph col-lg-6">
+        Cephalopods lack the visual blind spot that impairs the mammalian clade; is it possible that the mammalian eye
+        will eventually be redesigned by natural selection to resemble that superior eye of the cephalopod? It isn't likely.
+
+        One evolutionary biologist remarked that natural selection is not an inventor but a tinkerer, working with what has
+        already been built to improve functionality. For this reason, there would need to be intermediate adaptations to the
+        mammalian eye to access the superior cephalopod eye. For as long as these intermediate changes are not adaptive, the
+        mammalian eye will not develop into that of the cephalopod.
+
+        The complete rework of an organ is unavailable to natural selection
+    </div>
+    <div class="col-lg-6">
+        <img src="{{ url_for('static', filename='image/eyes-image.png') }}">
+
+
+    </div>
+</div>
+
+<!--Footer from "footer.html"-->
+{% include "footer.html" %}
+
+</body>
+</html>
