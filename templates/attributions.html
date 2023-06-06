@@ -9,67 +9,85 @@
 {% include "header.html" %}
 <body>
 
-<!--Navbar from "navbar.html"-->
-{% include "navbar.html" %}
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand">Darwiniana</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active nav-title" href="{{ url_for('home') }}">Home</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('natural_selection') }}">Natural Selection</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('evolutionary_mountain') }}">The Evolutionary Mountain</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('animal_sentience') }}">Implications of Animal Sentience</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('static', filename='image/homosexual_behavior_in_simians.pdf') }}"
+                   target="_blank">Simian Nonreproductive Sex</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('evolutionary_dentistry') }}">Vestigial Structures and Evolutionary Dentistry</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('a_cosmic_morality') }}">A Cosmic Morality</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('static', filename='image/kierkegaard_and_the_religious_sense.pdf') }}">The Religious Sense</a>
+    
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <h2>Attributions</h2>
+    <h6 class="attributions">
+        <b>Home</b>
+        <ul>
+            <li>Charles Darwin quotes by <a class="link-text" href="https://www.goodreads.com/author/quotes/12793.Charles_Darwin">Goodreads</a></li>
+        </ul>
+        <b>Natural Selection</b>
+        <ul>
+            <li>Camouflaged lizard photo by <a class="link-text"
+                                            href="https://unsplash.com/@climatechangevi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karl
+                Callwood</a> on <a class="link-text"
+                                href="https://unsplash.com/s/photos/camouflaged-animal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </li>
+        </ul>
 
-<br>
-<br>
-<br>
-<h2>Attributions</h2>
-<h6 class="attributions">
-    <b>Home</b>
-    <ul>
-        <li>Charles Darwin quotes by <a class="link-text" href="https://www.goodreads.com/author/quotes/12793.Charles_Darwin">Goodreads</a></li>
-    </ul>
-    <b>Natural Selection</b>
-    <ul>
-        <li>Camouflaged lizard photo by <a class="link-text"
-                                           href="https://unsplash.com/@climatechangevi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karl
-            Callwood</a> on <a class="link-text"
-                               href="https://unsplash.com/s/photos/camouflaged-animal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </li>
-    </ul>
+        <b>Vestigial Structures and Evolutionary Dentistry</b>
+        <ul>
+            <li>New World Encyclopedia: <a class="link-text"
+                                        href="https://www.newworldencyclopedia.org/entry/Hominidae"><em>Hominidae</em></a>
+            </li>
+            <li>New World Encyclopedia: <a class="link-text"
+                                        href="https://www.newworldencyclopedia.org/entry/New_World_monkey"><em>New World
+                Monkey</em></a></li>
+            <li>New World Encyclopedia: <a class="link-text"
+                                        href="https://www.newworldencyclopedia.org/entry/Prosimian"><em>Prosimian</em></a>
+            </li>
+            <li>The Primate Caecum and Appendix Vermiformis:
+                a Comparative Study (<a class="link-text"
+                                        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1233252/pdf/janat00231-0174.pdf">G.B.
+                    Scott, 1980</a>)
+            </li>
+            <li>The Global Incidence of Appendicitis:
+                A Systematic Review of Population-based Studies (<a class="link-text"
+                                                                    href="https://journals.lww.com/annalsofsurgery/FullText/2017/08000/The_Global_Incidence_of_Appendicitis__A_Systematic.8.aspx">Ferris
+                    et al., 2017</a>)
+            </li>
+            <li>Heather Heying & Bret Weinstein, <a class="link-text" href="https://www.amazon.com/Hunter-Gatherers-Guide-21st-Century
+        -Challenges/dp/B08WDN2RZB/ref=sr_1_1?keywords=a+hunter+gatherers+guide+to+the+21st+century&qid=1660827919&sprefix=a+
+        hunter+gather%2Caps%2C486&sr=8-1">A Hunter-Gatherer's Guide to the 21st Century</a>
+            </li>
+        </ul>
 
-    <b>Vestigial Structures and Evolutionary Dentistry</b>
-    <ul>
-        <li>New World Encyclopedia: <a class="link-text"
-                                       href="https://www.newworldencyclopedia.org/entry/Hominidae"><em>Hominidae</em></a>
-        </li>
-        <li>New World Encyclopedia: <a class="link-text"
-                                       href="https://www.newworldencyclopedia.org/entry/New_World_monkey"><em>New World
-            Monkey</em></a></li>
-        <li>New World Encyclopedia: <a class="link-text"
-                                       href="https://www.newworldencyclopedia.org/entry/Prosimian"><em>Prosimian</em></a>
-        </li>
-        <li>The Primate Caecum and Appendix Vermiformis:
-            a Comparative Study (<a class="link-text"
-                                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1233252/pdf/janat00231-0174.pdf">G.B.
-                Scott, 1980</a>)
-        </li>
-        <li>The Global Incidence of Appendicitis:
-            A Systematic Review of Population-based Studies (<a class="link-text"
-                                                                href="https://journals.lww.com/annalsofsurgery/FullText/2017/08000/The_Global_Incidence_of_Appendicitis__A_Systematic.8.aspx">Ferris
-                et al., 2017</a>)
-        </li>
-        <li>Heather Heying & Bret Weinstein, <a class="link-text" href="https://www.amazon.com/Hunter-Gatherers-Guide-21st-Century
-    -Challenges/dp/B08WDN2RZB/ref=sr_1_1?keywords=a+hunter+gatherers+guide+to+the+21st+century&qid=1660827919&sprefix=a+
-    hunter+gather%2Caps%2C486&sr=8-1">A Hunter-Gatherer's Guide to the 21st Century</a>
-        </li>
-    </ul>
-
-    <b>Vestigial Structures and Evolutionary Dentistry</b>
-    <ul>
-        <li>Søren Kierkegaard, <a class="link-text" href="https://www.amazon.com/Trembling-Penguin-Classics-Soren-Kierke
-        gaard/dp/0140444491/ref=sr_1_1?crid=1TXTPMXRK570B&keywords=fear+and+trembling&qid=1661206647&sprefix=fear+%2Caps
-        %2C1091&sr=8-1">Fear and Trembling</a>
-        </li>
-    </ul>
-    <b>General</b>
-    <ul>
-        <li>Favicon created by <a class="link-text" href="https://www.favicon.cc/?action=icon&file_id=469445">Nociphe on
-            favicon.cc</a></li>
-    </ul>
-</h6>
+        <b>Vestigial Structures and Evolutionary Dentistry</b>
+        <ul>
+            <li>Søren Kierkegaard, <a class="link-text" href="https://www.amazon.com/Trembling-Penguin-Classics-Soren-Kierke
+            gaard/dp/0140444491/ref=sr_1_1?crid=1TXTPMXRK570B&keywords=fear+and+trembling&qid=1661206647&sprefix=fear+%2Caps
+            %2C1091&sr=8-1">Fear and Trembling</a>
+            </li>
+        </ul>
+        <b>General</b>
+        <ul>
+            <li>Favicon created by <a class="link-text" href="https://www.favicon.cc/?action=icon&file_id=469445">Nociphe on
+                favicon.cc</a></li>
+        </ul>
+    </h6>
 
 <!--Footer from "footer.html"-->
 {% include "footer.html" %}

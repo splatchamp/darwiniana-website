@@ -8,68 +8,85 @@
 {% include "header.html" %}
 
 <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand">Darwiniana</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active nav-title" href="{{ url_for('home') }}">Home</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('natural_selection') }}">Natural Selection</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('evolutionary_mountain') }}">The Evolutionary Mountain</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('animal_sentience') }}">Implications of Animal Sentience</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('static', filename='image/homosexual_behavior_in_simians.pdf') }}"
+                   target="_blank">Simian Nonreproductive Sex</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('evolutionary_dentistry') }}">Vestigial Structures and Evolutionary Dentistry</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('a_cosmic_morality') }}">A Cosmic Morality</a>
+                <a class="nav-item nav-link nav-title" href="{{ url_for('static', filename='image/kierkegaard_and_the_religious_sense.pdf') }}">The Religious Sense</a>
+    
+            </div>
+        </div>
+    </nav><br>
+    <br>
+    <br>
+    <h1>Where is Evolutionary Dentistry?</h1>
+    <div class="evolutionary-dentistry-text">
+        <div class="paragraph drop-cap">
+            Evolutionary medicine has only recently begun as an application of evolutionary theory to the field of medicine.
+            With luck, physicians will eventually become competent evolutionary theorists, though the hiring of theorists in
+            universities may be preferred for the benefits to both evolutionary medicine and evolutionary biology. This may
+            be difficult
+            owing to the prestige of receiving research grants, which discounts the universities' prospects of hiring
+            biology theorists who,
+            after all, require far fewer resources than experimental researchers. Let's save this topic for another day and
+            focus on
+            evolutionary dentistry; first, a couple of so-called vestigial organs need some love.
+        </div>
+        <div class="paragraph">
+            The first vestigial organ that comes to mind is the appendix, which is found in many mammal species. Rodents,
+            rabbits,
+            and wombats have an appendix-like organ while the taxonomic family <a class="link-text"
+                                                                                href="https://www.newworldencyclopedia.org/entry/Hominidae"><em>Hominidae</em></a>
+            (genuses Pan, Pongo, Gorilla, & Homo) have appendices more familiar to us. Many other Old World primates, those
+            found
+            in Africa and Asia, also have appendices. The so-called lower <a class="link-text"
+                                                                            href="https://www.newworldencyclopedia.org/entry/New_World_monkey">primates
+            of the New World</a>
+            (South America) and the <a class="link-text" href="https://www.newworldencyclopedia.org/entry/Prosimian">prosimians</a>
+            do not have appendices,
+            however (<a class="link-text"
+                        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1233252/pdf/janat00231-0174.pdf">G.B. Scott,
+            1980</a>).
+            The prevalence of the appendix should pose to us a question: is the appendix an adaptation? Using the Three-part
+            Test
+            of Adaptation (Heather Heying & Bret Weinstein, <a class="link-text" href="https://www.amazon.com/Hunter-Gatherers-Guide-21st-Century
+        -Challenges/dp/B08WDN2RZB/ref=sr_1_1?keywords=a+hunter+gatherers+guide+to+the+21st+century&qid=1660827919&sprefix=a+
+        hunter+gather%2Caps%2C486&sr=8-1">A Hunter-Gatherer's Guide to the 21st Century</a>),
 
-<!--Navbar from "navbar.html"-->
-{% include "navbar.html" %}
-<br>
-<br>
-<br>
-<h1>Where is Evolutionary Dentistry?</h1>
-<div class="evolutionary-dentistry-text">
-    <div class="paragraph drop-cap">
-        Evolutionary medicine has only recently begun as an application of evolutionary theory to the field of medicine.
-        With luck, physicians will eventually become competent evolutionary theorists, though the hiring of theorists in
-        universities may be preferred for the benefits to both evolutionary medicine and evolutionary biology. This may
-        be difficult
-        owing to the prestige of receiving research grants, which discounts the universities' prospects of hiring
-        biology theorists who,
-        after all, require far fewer resources than experimental researchers. Let's save this topic for another day and
-        focus on
-        evolutionary dentistry; first, a couple of so-called vestigial organs need some love.
+            <ol>
+                <li>Is it complex? <b>Yes</b></li>
+                <li>Does it have energetic or material costs, which vary between individuals? <b>Yes</b></li>
+                <li>Has it persisted over evolutionary time? <b>Yes</b></li>
+            </ol>
+        </div>
+        <div class="paragraph">
+            But isn't the appendix vestigial in humans? Well, the rate of appendicitis has not remained constant over the
+            decades. If the appendix were vestigial, we would expect rates of appendicitis
+            to stay constant for a longer period of time than is the case. We would also expect humans all over the globe to
+            be experiencing appendicitis at similar rates.
+            <a class="link-text"
+            href="https://journals.lww.com/annalsofsurgery/FullText/2017/08000/The_Global_Incidence_of_Appendicitis__A_Systematic.8.aspx">Ferris
+                et al. (2017)</a>
+            find that the period during which a country industrializes coincides with a growing rate of appendicitis. The
+            United States (including Alaska but not Canada),
+            Italy, New Zealand, and the Scandinavian countries were already experiencing high rates of appendicitis before
+            1970, namely >= 150 per 100,000. Since 1970,
+            Canada, Mexico, other European countries, and parts of Africa and South America have joined the ranks.
+            Appendicitis is slowly becoming a global phenomenon.
+        </div>
     </div>
-    <div class="paragraph">
-        The first vestigial organ that comes to mind is the appendix, which is found in many mammal species. Rodents,
-        rabbits,
-        and wombats have an appendix-like organ while the taxonomic family <a class="link-text"
-                                                                              href="https://www.newworldencyclopedia.org/entry/Hominidae"><em>Hominidae</em></a>
-        (genuses Pan, Pongo, Gorilla, & Homo) have appendices more familiar to us. Many other Old World primates, those
-        found
-        in Africa and Asia, also have appendices. The so-called lower <a class="link-text"
-                                                                         href="https://www.newworldencyclopedia.org/entry/New_World_monkey">primates
-        of the New World</a>
-        (South America) and the <a class="link-text" href="https://www.newworldencyclopedia.org/entry/Prosimian">prosimians</a>
-        do not have appendices,
-        however (<a class="link-text"
-                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1233252/pdf/janat00231-0174.pdf">G.B. Scott,
-        1980</a>).
-        The prevalence of the appendix should pose to us a question: is the appendix an adaptation? Using the Three-part
-        Test
-        of Adaptation (Heather Heying & Bret Weinstein, <a class="link-text" href="https://www.amazon.com/Hunter-Gatherers-Guide-21st-Century
-    -Challenges/dp/B08WDN2RZB/ref=sr_1_1?keywords=a+hunter+gatherers+guide+to+the+21st+century&qid=1660827919&sprefix=a+
-    hunter+gather%2Caps%2C486&sr=8-1">A Hunter-Gatherer's Guide to the 21st Century</a>),
-
-        <ol>
-            <li>Is it complex? <b>Yes</b></li>
-            <li>Does it have energetic or material costs, which vary between individuals? <b>Yes</b></li>
-            <li>Has it persisted over evolutionary time? <b>Yes</b></li>
-        </ol>
-    </div>
-    <div class="paragraph">
-        But isn't the appendix vestigial in humans? Well, the rate of appendicitis has not remained constant over the
-        decades. If the appendix were vestigial, we would expect rates of appendicitis
-        to stay constant for a longer period of time than is the case. We would also expect humans all over the globe to
-        be experiencing appendicitis at similar rates.
-        <a class="link-text"
-           href="https://journals.lww.com/annalsofsurgery/FullText/2017/08000/The_Global_Incidence_of_Appendicitis__A_Systematic.8.aspx">Ferris
-            et al. (2017)</a>
-        find that the period during which a country industrializes coincides with a growing rate of appendicitis. The
-        United States (including Alaska but not Canada),
-        Italy, New Zealand, and the Scandinavian countries were already experiencing high rates of appendicitis before
-        1970, namely >= 150 per 100,000. Since 1970,
-        Canada, Mexico, other European countries, and parts of Africa and South America have joined the ranks.
-        Appendicitis is slowly becoming a global phenomenon.
-    </div>
-</div>
 
 
 <!--Footer from "footer.html"-->
