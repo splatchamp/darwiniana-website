@@ -39,19 +39,20 @@
                 <a class="nav-item nav-link active nav-title" href="index.html">Home</a>
                 <a class="nav-item nav-link nav-title" href="natural_selection.html">Natural Selection</a>
                 <a class="nav-item nav-link nav-title" href="evolutionary_mountain.html">The Evolutionary Mountain</a>
-                <a class="nav-item nav-link nav-title" href="image/homosexual_behavior_in_simians.pdf" target="_blank">Simian Nonreproductive Sex</a>
+                <a class="nav-item nav-link nav-title" href="../homosexual_behavior_in_simians.pdf" target="_blank">Simian Nonreproductive Sex</a>
                 <a class="nav-item nav-link nav-title" href="evolutionary_dentistry.html">Vestigial Structures and Evolutionary Dentistry</a>
                 <a class="nav-item nav-link nav-title" href="a_cosmic_morality.html">A Cosmic Morality</a>
-                <a class="nav-item nav-link nav-title" href="image/kierkegaard_and_the_religious_sense.pdf">The Religious Sense</a>
             </div>
         </div>
     </nav>
     <section id="top-section">
         <div class="row">
-            <img class="col-lg-6 darwin-image" src="{{ url_for('static', filename='image/darwin-image.jpg') }}" ,
+            <img class="col-lg-6 darwin-image" src="../darwin-image.jpg" ,
                 alt="darwin-image">
             <div class="col-lg-6 quote-text">
-                {{ darwin_quote }}
+                <p>
+                    “Besides love and sympathy, animals exhibit other qualities connected with the social 
+                    instincts which in us would be called moral.”
                 </p>
                 <p>
                     - Charles Darwin
@@ -64,23 +65,26 @@
             data-interval="10000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <h2 class="testimonial-text">"{{ singer_quote_info.quote }}"</h2>
+                    <h2 class="testimonial-text">"All the arguments to prove man's superiority cannot shatter 
+                        this hard fact: in suffering the animals are our equals."</h2>
                     <img class="d-block mx-auto carousel-image"
-                        src="{{ url_for('static', filename='image/singer-image.jpg') }}" alt="singer-image">
-                    <em>{{ singer_quote_info.name }}</em></div>
+                        src="../singer-image.jpg" alt="singer-image">
+                    <em>Peter Singer, Ira W. DeCamp Professor of Bioethics at Princeton University</em></div>
 
                 <div class="carousel-item">
-                    <h2 class="testimonial-text">"{{ trivers_quote_info.quote }}"</h2>
+                    <h2 class="testimonial-text">"The great sage Thales once put the general matter succinctly
+                         'Oh master,' he was asked, 'what is the most difficult thing to do?' 'To know thyself,' 
+                         he replied. 'And the easiest?' 'To give advice to others.'"</h2>
                     <img class="d-block mx-auto carousel-image"
-                        src="{{ url_for('static', filename='image/trivers-image.png') }}" alt="trivers-image">
-                    <em>{{ trivers_quote_info.name }}</em>
+                        src="../trivers-image.png" alt="trivers-image">
+                    <em>Robert Trivers, former Harvard, UC Santa Cruz, and Rutgers University professor</em>
                 </div>
 
                 <div class="carousel-item">
-                    <h2 class="testimonial-text">"{{ pinker_quote_info.quote }}"</h2>
+                    <h2 class="testimonial-text">"Evolution is an indispensable component of any satisfying explanation of our psychology."</h2>
                     <img class="d-block mx-auto carousel-image"
-                        src="{{ url_for('static', filename='image/pinker-image.jpg') }}" alt="pinker-image">
-                    <em>{{ pinker_quote_info.name }}</em>
+                        src="../pinker-image.jpg" alt="pinker-image">
+                    <em>Steven Pinker, Johnstone Family Professor of Psychology at Harvard University</em>
                 </div>
             </div>
 
