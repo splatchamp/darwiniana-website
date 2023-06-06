@@ -1,1 +1,1 @@
-# darwiniana
+This is my first website, Darwiniana. I created this near the end of 2022. This is the static version of the site, meaning I removed the Flask and Python files to publish on Github Pages.
