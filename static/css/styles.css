@@ -142,7 +142,7 @@ hr {
 }
 
 .puppet_img {
-    text_align: center;
+    justify-content: center;
 }
 
 .in-text-quotes {
