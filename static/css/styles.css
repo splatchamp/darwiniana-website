@@ -141,6 +141,10 @@ hr {
     font-size: 1.5rem;
 }
 
+.puppet_img {
+    text_align: center;
+}
+
 .in-text-quotes {
     text-align: center;
     padding: 30px; 100px;
